@@ -21,8 +21,13 @@ const { title } = Astro.props;
 	</body>
 </html>
 
-<style  lang="scss" is:global>
-	section {
-		background-color: red;
-	}
+<style lang="scss" is:global>
+@import '@sass/base/variables.scss';
+@import '@sass/base/reset.scss';
+html {
+	background-color: $color1;
+}
+* {
+	color: $color2;
+}
 </style>
