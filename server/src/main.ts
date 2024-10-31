@@ -1,11 +1,10 @@
 import express, { Application, Request, Response } from 'express'
-import 'dotenv/config'
-
 const app : Application = express()
+import 'dotenv/config'
 const { PORT } = process.env
 
-app.get('/', (req:Request,res: Response)=>{
-    res.send('Merhaba Miss Minutes!')
-})
+import { HomeRoute } from './routers/index.js'
+
+app.use(HomeRoute)
 
 app.listen(PORT, ()=> console.log(`Server ${PORT} portunda başlatıldı.`))
