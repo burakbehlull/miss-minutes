@@ -1,0 +1,22 @@
+{
+  "name": "miss-minutes",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "server:start":"cd server && npm run start",
+	"server:serve":"cd server && npm run serve",
+    "server:dev":"cd server && npm run dev",
+
+    "client:dev":"cd client && npm run dev",
+    "client:build":"cd client && npm run build",
+	
+    "dev": "concurrently \"npm run client:dev\" \"npm run server:dev\""
+    
+  },
+  "keywords": [],
+  "author": "Burak Behlül <@burakbehlull>",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
