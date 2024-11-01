@@ -15,6 +15,11 @@ import Nav from '../components/Nav.astro'
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+		
 		<title>{title}</title>
 	</head>
 	<body>
@@ -28,12 +33,6 @@ import Nav from '../components/Nav.astro'
 </html>
 
 <style lang="scss" is:global>
-@import '@sass/base/variables.scss';
-@import '@sass/base/reset.scss';
-html {
-	background-color: $color1;
-}
-* {
-	color: $color2;
-}
+@import '@sass/main.scss';
+
 </style>
