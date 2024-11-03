@@ -1,6 +1,22 @@
 nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: .6em 1em;
+    height: 100%;
+    width: 100%;
+
+    h1 {
+        color: $color5;
+        font-size: 1.4em;
+        flex: 1;
+    }
     ul {
         display: flex;
+        flex: 1 2 5em;
+        align-items: center;
         gap: 1rem;
+        
     }
 }

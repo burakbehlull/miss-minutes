@@ -4,10 +4,16 @@
 @import 'partials/nav';
 
 html {
-	background-color: $color1;
+	// background-color: $color1;
     padding: 1.6rem 1.8rem;
     font-family: "Nunito", serif;
 }
 * {
 	color: $color2;
+}
+
+section {
+    height: calc(80vh);
+    width: max(100%);
+    background-color: red;
 }
