@@ -1,5 +1,6 @@
 @import 'base/variables';
 @import 'base/reset';
+@import 'helpers/mixins';
 
 @import 'partials/nav';
 
@@ -12,8 +13,7 @@ html {
 	color: $color2;
 }
 
+
 section {
-    height: calc(80vh);
-    width: max(100%);
-    background-color: red;
+    @import 'pages/hero';
 }

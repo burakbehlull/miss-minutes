@@ -1,0 +1,13 @@
+@mixin page($h, $w:null){
+    height: calc($h);
+    @if $w {
+        width: $w;
+    } @else {
+        width: max(100%);
+    }
+}
+
+%pageSize {
+    height: calc(80vh);
+    width: max(100%);
+}
