@@ -1,3 +1,34 @@
 &#hero {
-    @include page(80vh);
+    @include page(100vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // gap: 5rem;
+    flex-direction: column;
+    h1 {
+        font-size: 4rem;
+    }
+    .hero-content {
+        // padding-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        gap: 2rem;
+    }
+    .hero-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: max(50%, 200px);
+    }
+    .human {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+
+    }
 }
